@@ -1,0 +1,12 @@
+<%= form_for title do |f| %>
+  <%= f.label :title, "Enter a title" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :address, "Enter an address" %>
+  <%= f.text_field :address %>
+
+  <%= f.label :complete, "Complete?" %><br>
+  <%= f.check_box :complete %><br>
+
+  <%= f.submit %>
+  <% end %>
