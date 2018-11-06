@@ -2,7 +2,14 @@
 
 <p><%= @task.details %></p>
 
-<%= link_to "Back to all Tasks", tasks_path %>
+<%= link_to "Back to all Tasks", tasks_path %><br>
+<br>
 
-<%= link_to "Edit Tasks", edit_task_path %>
+<% if @task.completed  %>
+ <p>Task completed</p>
+<% else %>
+<p>Task not completed</p>
+<% end %>
+
+<%= link_to "Edit Task", edit_task_path %>
 
